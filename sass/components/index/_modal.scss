@@ -175,7 +175,7 @@
     border: 1.8px solid getColor('link-hover-color');
   }
   &__agreement:checked + &__check {
-    background-image: url(../../images/optimize-svg/icon-check.svg);
+    background-image: url(../images/optimize-svg/icon-check.svg);
     background-color: getColor('btn-bgc-secondary-color');
     border: 0;
     background-size: contain;
