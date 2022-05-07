@@ -1,0 +1,135 @@
+.footer {
+  background-color: getColor('bgc-accent');
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+  & .container {
+    display: flex;
+  }
+
+  &__wrap:first-child {
+    padding-right: 10px;
+  }
+  &__wrap:nth-child(2) {
+    margin-left: 70px;
+    padding-top: 12px;
+    padding-bottom: 40px;
+  }
+  &__logo {
+    color: #ffffff;
+  }
+  &__adress {
+    color: #ffffff;
+
+    line-height: 1.71;
+    font-style: normal;
+
+    margin-top: 20px;
+    margin-bottom: 9px;
+  }
+  &__link {
+    color: getColor('text-footer-links-color');
+
+    line-height: 1.71;
+    text-decoration: none;
+
+    display: block;
+    transition: getTransition('color-transition');
+  }
+  &__link:hover,
+  &__link:focus {
+    color: getColor('link-hover-color');
+  }
+  &__link:nth-of-type(2) {
+    margin-bottom: 9px;
+  }
+  &__invitation {
+    color: getColor('text-title-secondary-color');
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.footer-soc {
+  &__item:not(:first-child) {
+    margin-left: 10px;
+  }
+  &__icon {
+    fill: #ffffff;
+  }
+}
+.footer-soc__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition: getTransition('bgc-transition');
+  &:hover,
+  &:focus {
+    background-color: getColor('link-hover-color');
+  }
+}
+
+.footer-form {
+  padding-top: 12px;
+  padding-bottom: 34px;
+  margin-left: 93px;
+
+  &__input {
+    padding: 15px 16px;
+    width: 358px;
+    height: 50px;
+    outline: none;
+
+    color: getColor('text-title-secondary-color');
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    transition: getTransition('border-color-transition');
+
+    .footer-form__field:focus-within & {
+      border-color: getColor('link-hover-color');
+    }
+  }
+  &__input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &__btn {
+    @extend %btn;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 12px;
+    padding: 10px 28px 10px 29px;
+    background-color: getColor('btn-bgc-secondary-color');
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    color: getColor('btn-text-secondary-color');
+    transition: getTransition('bgc-transition');
+  }
+  &__btn:hover,
+  &__btn:focus {
+    background-color: getColor('btn-bgc-hero-hover');
+  }
+  &__icon {
+    margin-left: 10px;
+    fill: #ffffff;
+  }
+}
