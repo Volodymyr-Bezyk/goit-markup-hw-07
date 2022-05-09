@@ -1,59 +1,61 @@
 .examples {
   flex-wrap: wrap;
   margin: -15px;
+}
 
-  &__item {
-    flex-basis: calc((100% - 90px) / 3);
-    margin: 15px;
-  }
-  &__img {
-    display: block;
-  }
-  &__thumb {
-    position: relative;
-    overflow: hidden;
-  }
-  &__description {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.examples__item {
+  flex-basis: calc((100% - 90px) / 3);
+  margin: 15px;
+}
+.examples__img {
+  display: block;
+}
+.examples__thumb {
+  position: relative;
+  overflow: hidden;
+}
+.examples__description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 
-    color: getColor('text-title-secondary-color');
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
+  color: getColor('text-title-secondary-color');
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
 
-    background-color: rgba(33, 150, 243, 0.9);
-    padding: 63px 24px;
+  background-color: rgba(33, 150, 243, 0.9);
+  padding: 63px 24px;
 
-    transform: translateY(100%);
-    transition: getTransition('transform-transition');
-  }
-  &__link:hover &__description,
-  &__link:focus &__description {
+  transform: translateY(100%);
+  transition: getTransition('transform-transition');
+
+  .examples__link:hover &,
+  .examples__link:focus & {
     transform: translateY(0);
   }
-  &__inner {
-    padding: 20px 24px;
-    border: 1px solid #eeeeee;
-  }
-  &__subtitle {
-    color: getColor('text-title-primary-color');
+}
 
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+.examples__inner {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+}
+.examples__subtitle {
+  color: getColor('text-title-primary-color');
 
-    margin-bottom: 4px;
-  }
-  &__text {
-    color: getColor('text-color');
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 
-    font-size: 16px;
-    line-height: 1.88;
-  }
+  margin-bottom: 4px;
+}
+.examples__text {
+  color: getColor('text-color');
+
+  font-size: 16px;
+  line-height: 1.88;
 }
 
 .examples__link {

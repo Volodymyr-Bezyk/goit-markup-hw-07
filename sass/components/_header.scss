@@ -1,33 +1,28 @@
 .header {
   border-top: 1px solid transparent;
   border-bottom: 1px solid #ececec;
+}
+.header__logo {
+  color: #000000;
+}
+.header__nav {
+  margin-left: 93px;
+}
+.header__item:not(:first-child) {
+  margin-left: 50px;
+}
+.header__link {
+  @include nav-link(getColor('text-title-primary-color'));
+  transition: getTransition('color-transition');
 
-  &__logo {
-    color: #000000;
+  &:hover,
+  &:focus {
+    color: getColor('text-hover-color');
   }
-  &__nav {
-    margin-left: 93px;
-  }
-  &__item:not(:first-child) {
-    margin-left: 50px;
-  }
-  &__link {
-    @include nav-link(getColor('text-title-primary-color'));
-
-    // @extend %nav-link;
-    // color: getColor('text-title-primary-color');
-
-    transition: getTransition('color-transition');
-
-    &:hover,
-    &:focus {
-      color: getColor('text-hover-color');
-    }
-  }
-  &__icon {
-    fill: currentColor;
-    margin-right: 10px;
-  }
+}
+.header__icon {
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 .header__link--current {
@@ -55,10 +50,6 @@
   @include nav-link(getColor('text-color'));
   display: inline-flex;
   align-items: center;
-
-  // @extend %nav-link;
-  // color: getColor('text-color');
-
   transition: getTransition('color-transition');
 
   &:hover,
