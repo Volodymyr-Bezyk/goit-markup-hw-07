@@ -8,55 +8,6 @@
 .header__nav {
   margin-left: 93px;
 }
-.header__item:not(:first-child) {
-  margin-left: 50px;
-}
-.header__link {
-  @include nav-link(getColor('text-title-primary-color'));
-  transition: getTransition('color-transition');
-
-  &:hover,
-  &:focus {
-    color: getColor('text-hover-color');
-  }
-}
-.header__icon {
-  fill: currentColor;
-  margin-right: 10px;
-}
-
-.header__link--current {
-  position: relative;
-  color: getColor('text-accent-color');
-
-  &::after {
-    position: absolute;
-    bottom: 0%;
-    left: 0%;
-
-    content: '';
-    width: 100%;
-    height: 4px;
-
-    background-color: getColor('text-accent-color');
-    border-radius: 2px;
-  }
-}
-
 .header__contacts {
   margin-left: auto;
-}
-.contacts__link {
-  @include nav-link(getColor('text-color'));
-  display: inline-flex;
-  align-items: center;
-  transition: getTransition('color-transition');
-
-  &:hover,
-  &:focus {
-    color: getColor('text-hover-color');
-  }
-  &:last-child {
-    margin-left: 50px;
-  }
 }

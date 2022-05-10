@@ -1,20 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0 auto;
-}
-ul,
-ol {
-  padding-left: 0;
-  margin: 0;
-}
-
 body {
   color: getColor('text-color');
   background-color: getColor('bgc-primary');
@@ -25,19 +10,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 .list {
   list-style: none;
 }
